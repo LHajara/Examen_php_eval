@@ -1,5 +1,5 @@
 
-<?php require_once
+<?php 
 $bdd = new PDO ('mysql:host=localhost;dbname=immobilier', "root",""); // connexion à la BDD
 
 
@@ -14,4 +14,4 @@ $myApparts = $req->fetchAll(PDO::FETCH_ASSOC); // recupere les datas de la req o
 
 $req->closeCursor(); 
 
-var_dump($myApparts); // verifie qu'on a bien notre resultat !
+// var_dump($myApparts); // verifie qu'on a bien notre resultat !

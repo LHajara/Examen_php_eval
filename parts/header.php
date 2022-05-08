@@ -19,11 +19,11 @@
             <a href="accueil.php" class="navbar-brand text-danger"></a>
 
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="nos_bien.php" class="nav-link">Nos biens</a>
+                <li class="">
+                    <a href="./annonce.php" class="nav-link">Annonce</a>
                 </li>
-                <li class="nav-item">
-                    <a href="drivers.php" class="nav-link">rajout de biens</a>
+                <li class="">
+                    <a href="./rajoutez.php" class="nav-link">Rajoutez une annonce</a>
                 </li>
             </ul>
 
