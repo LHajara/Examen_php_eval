@@ -16,9 +16,10 @@
 <header>
         <nav class="navbar navbar-expand navbar-dark bg-dark">
 
-            <a href="accueil.php" class="navbar-brand text-danger"></a>
+        <a href="accueil.php" class="navbar-brand text-danger">Immo-lation</a>
 
             <ul class="navbar-nav">
+                <li ></li>
                 <li class="">
                     <a href="./annonce.php" class="nav-link">Annonce</a>
                 </li>
