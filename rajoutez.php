@@ -18,14 +18,20 @@
             <input type="number" class="form-control my-2" name="cp" placeholder="code postale">
             <input type="number" class="form-control my-2" name="surface" placeholder="la surface">
             <input type="number" class="form-control my-2" name="prix" placeholder="prix">
-            <input type="file" class="form-control my-2" name="photo" placeholder="photo">
+            <input type="select"> 
+            <libellé>Type du logement</libellé>
+            <option valeur="valeur1">location</option>
+            <option valeur="valeur2">vente</option>
+            <option valeur="valeur3">vacance</option> </input>
+ 
+            <input type="file" class="form-control my-2" name="photo" placeholder="photo"  >
             <textarea type="text" class="form-control my-2" name="type" placeholder="un commentaire..."></textarea>
             <br>
             <button type="submit" class="m-auto my-2 d-block btn btn-success">Ajouter</button>
         </form>
 
 
-
+     
 
 
 <?php require_once "./parts/footer.php" ?>
