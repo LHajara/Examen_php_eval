@@ -11,7 +11,7 @@
         <h2 class="display-3 text-danger  ">
             Immo-Lation
         </h2>
-        <p class="lead  text-dark">Votre site de logement! <br>Retrouvez plus d'1 million d'annonces immobilières sur Logic-immo.com. 
+        <p class="lead  text-dark">Votre site de logement! <br>Retrouvez plus d'1 million d'annonces immobilières sur Immo_lation.com. 
         <br> Annonces immobilières issues de nos agences partenaires partout en France : achat, ...</p>
         <hr class="my-4">
         
