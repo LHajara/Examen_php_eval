@@ -8,10 +8,11 @@
 <main>
 <div class="container">
     <div class="jumbotron my-8 text-center">
-        <h2 class="display-3 text-danger">
+        <h2 class="display-3 text-danger  ">
             Immo-Lation
         </h2>
-        <p class="lead">Votre site de logement, enflammez vos séjours et vacances!</p>
+        <p class="lead  text-dark">Votre site de logement! <br>Retrouvez plus d'1 million d'annonces immobilières sur Logic-immo.com. 
+        <br> Annonces immobilières issues de nos agences partenaires partout en France : achat, ...</p>
         <hr class="my-4">
         
         <p class="lead">
