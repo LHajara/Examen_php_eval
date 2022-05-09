@@ -21,11 +21,11 @@
         <input type="number" class="form-control my-2" name="surface" placeholder="la surface">
         <input type="number" class="form-control my-2" name="prix" placeholder="prix">
         <input type="number" class="form-control my-2" name="type" placeholder="type">
-        <!-- <select id="monselect" name="type" class="form-control my-2">
+        <select id="monselect" name="type" class="form-control my-2">
             <option value="valeur1">Location</option>
             <option value="valeur2" selected>Vente</option>
             <option value="valeur3">Vacances</option>
-        </select> -->
+        </select>
         <input type="file" class="form-control my-2" name="photo" placeholder="photo">
         <textarea type="text" class="form-control my-2" name="description" placeholder="un commentaire..."></textarea>
         <br>

@@ -1,28 +1,22 @@
-<?php
-require_once "./test.php"
-// var_dump($_POST);
+<?php require_once "./parts/header.php" ?>
 
-$bdd = new PDO('mysql:host=localhost;dbname=immobilier', "root", ""); 
-// hum un require database.php serait mieux non ?
-$idGame = $_POST['gameID'];
 
-$req  = $bdd->prepare("SELECT * FROM jeux_video WHERE ID=:gameID"); 
+<form action="editValid.php"></form>
 
-$req->bindValue('gameID', $idGame, PDO::PARAM_INT); 
+<input type="text" class="form-control my-2" name="titre" placeholder="titre">
+        <input type="text" class="form-control my-2" name="adresse" placeholder="votre adresse">
+        <input type="text" class="form-control my-2" name="ville" placeholder="ville">
+        <input type="number" class="form-control my-2" name="cp" placeholder="code Postale">
+        <input type="number" class="form-control my-2" name="surface" placeholder="la surface">
+        <input type="number" class="form-control my-2" name="prix" placeholder="prix">
+        <select id="monselect" name="type" class="form-control my-2">
+            <option value="valeur1">Location</option>
+            <option value="valeur2" selected>Vente</option>
+            <option value="valeur3">Vacances</option>
+        </select>
+        <input type="file" class="form-control my-2" name="photo" placeholder="photo">
+        <textarea type="text" class="form-control my-2" name="description" placeholder="un commentaire..."></textarea>
+        <br><button type="submit" class="m-auto my-2 d-block btn btn-success">Ajouter</button>
 
-$req->execute(); 
+        <?php require_once "./parts/footer.php" ?>
 
-$game = $req->fetchAll(PDO::FETCH_ASSOC); 
-
-$req->closeCursor(); 
-
-var_dump($game);
-var_dump($game[0]['nom']);
-
-?>
-
-<form action="editValid.php" method="post">
-    <input type="text" name="nom" value="<?= $game[0]['nom'] ?>">
-    <input hidden type="text" name="gameID" value="<?= $game[0]['ID'] ?>">
-<button type="submit">Edit</button>
-</form>

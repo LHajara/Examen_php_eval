@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Immo-Lation</title>
 </head>
 <body>
     
@@ -62,7 +62,7 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
-        <a href="rajoutez.php" class="btn btn-info d-block">Ajouter un jeu</a>
+        <a href="rajoutez.php" class="btn btn-info d-block">Ajouter un logement</a>
     </main>
 
 </body>
