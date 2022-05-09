@@ -1,14 +1,14 @@
 <?php
-require_once "./test.php"
-// var_dump($_POST);
+require_once "test.php";
+var_dump ($_POST);
 
 $bdd = new PDO('mysql:host=localhost;dbname=immobilier', "root", ""); 
 // hum un require database.php serait mieux non ?
 $idGame = $_POST['id_'];
 
-$req  = $bdd->prepare("SELECT * FROM logement WHERE id_logement=:title"); 
+$req  = $bdd->prepare("SELECT * FROM logement WHERE id_logement=:titre"); 
 
-$req->bindValue('gameID', $idGame, PDO::PARAM_INT); 
+$req->bindValue('appartID', $idGame, PDO::PARAM_INT); 
 
 $req->execute(); 
 
@@ -16,8 +16,8 @@ $myAppart = $req->fetchAll(PDO::FETCH_ASSOC);
 
 $req->closeCursor(); 
 
-var_dump($game);
-var_dump($game[0]['nom']);
+var_dump($myAppart);
+var_dump($myAppart[0]['titre']);
 
 ?>
 

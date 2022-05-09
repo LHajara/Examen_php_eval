@@ -26,6 +26,9 @@
                 <li class="">
                     <a href="./rajoutez.php" class="nav-link">Rajoutez une annonce</a>
                 </li>
+                <li class="">
+                    <a href="./modif.php" class="nav-link">Modier une annonce</a>
+                </li>
             </ul>
 
         </nav>

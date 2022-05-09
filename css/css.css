@@ -1,8 +1,15 @@
 .dimension {
     max-width:560px;
 }
-
+.dimension2 {
+    max-width:160px;
+}
 .immolation {
     margin-left: auto;
     margin-right: auto;
+}
+
+.structure{
+    size: 600px;
+
 }

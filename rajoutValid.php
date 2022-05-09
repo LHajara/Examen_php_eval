@@ -1,8 +1,9 @@
-<?php
-var_dump($_POST);
 
+
+<?php require_once "./parts/header.php" ?>
+<?php require_once "./control.php" ?>
+<?php
 $bdd = new PDO('mysql:host=localhost;dbname=immobilier', "root", "");
-// encore cette bdd ici !
 
 $titre = $_POST['titre']; 
 $adresse = $_POST['adresse']; 
@@ -43,8 +44,6 @@ $stmt->closeCursor();       // donc SI good redirect avec header
 
 var_dump($stmt = $bdd->prepare($req));
 
-
-// ah comme ça ! évidemment !
 if ($result) {
     header("Location: test.php");
 }

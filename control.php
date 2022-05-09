@@ -14,4 +14,19 @@ $myApparts = $req->fetchAll(PDO::FETCH_ASSOC); // recupere les datas de la req o
 
 $req->closeCursor(); 
 
-// var_dump($myApparts); // verifie qu'on a bien notre resultat !
+
+
+
+
+// $theme="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css"
+
+// switch ($theme) {
+//     case $_GET["theme"]:
+//        if (".ra") $theme = ;
+//         break;
+//     default:
+//         $theme = "cerulean";
+//         break;
+
+
+

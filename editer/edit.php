@@ -1,4 +1,4 @@
-<?php require_once "./parts/header.php" ?>
+<?php require_once "../parts/header.php" ?>
 
 
 <form action="editValid.php"></form>
@@ -16,7 +16,7 @@
         </select>
         <input type="file" class="form-control my-2" name="photo" placeholder="photo">
         <textarea type="text" class="form-control my-2" name="description" placeholder="un commentaire..."></textarea>
-        <br><button type="submit" class="m-auto my-2 d-block btn btn-success">Ajouter</button>
+        <br><button type="submit">Ajouter</button>
 
-        <?php require_once "./parts/footer.php" ?>
+        <?php require_once "../parts/footer.php" ?>
 

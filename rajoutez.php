@@ -13,7 +13,7 @@
 <body>
     <h2 class="my-5 text-center"> Ajoutez votre logement</h2>
 
-    <form class="bg-primary shadow p-3 form-group col-6 m-auto border" action="createValid.php" method="post">
+    <form class="bg-primary shadow p-3 form-group col-6 m-auto border" action="rajoutValid.php" method="post">
         <input type="text" class="form-control my-2" name="titre" placeholder="titre">
         <input type="text" class="form-control my-2" name="adresse" placeholder="votre adresse">
         <input type="text" class="form-control my-2" name="ville" placeholder="ville">

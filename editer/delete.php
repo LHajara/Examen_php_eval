@@ -7,7 +7,7 @@ if (!empty($_POST['appartID'])) {
 
     $idAppart = $_POST['appartID']; // vérifier type
     // avoir la bdd ($bdd) forcement... require...
-    $req = "DELETE FROM logement WHERE id_logement :id";
+    $req = "DELETE FROM logement WHERE id_logement= :id";
     $stmt = $bdd->prepare($req); // ou ecrire dans prepare 
     $stmt->bindValue(":id", $idAppart, PDO::PARAM_INT);
     $result = $stmt->execute(); // si good redirection !
@@ -15,6 +15,6 @@ if (!empty($_POST['appartID'])) {
     
     
     if ($result) {
-        header("Location: test.php");
+        header("Location: modif.php");
     }
 }
